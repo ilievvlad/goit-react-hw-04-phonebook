@@ -10,7 +10,7 @@ export const Filter = ({ value, onFilter }) => {
 				type="text"
 				placeholder="Enter contact name"
 				value={value}
-				onChange={onFilter}
+				onChange={e => onFilter(e.target.value)}
 			/>
 		</Label>
 	);
